@@ -5,8 +5,14 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'Home Page')
+    return render(request, 'home.html')
 
 
 def room(request):
-    return render(request, 'ROOM')
+    return render(request, 'room.html')
+
+
+def niceweb(request):
+    return render(request, 'niceweb.html')
+
+
