@@ -32,7 +32,7 @@
                 outputText = "<em>c</em> must be a number!";
             } else {
                 // calculate the result using x = (-b +- sqrt(b^2 - 4ac)) / 2a
-                var x1 = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+                var x1 = (1*a + 1*b + 1*c);
                 var x2 = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
                 outputText = "For the equation <strong>" + (a == 1 ? "" : a) + "x\u00B2 + " + (b == 1 ? "" : b) + "x + " + c + " = 0</strong>, x can equal <strong>" + x1 + "</strong> or <strong>" + x2 + "</strong>";
             }
@@ -41,8 +41,8 @@
             document.getElementById("output_text").innerHTML = outputText;
         }
     </script>
-
 </head>
+
 <body>
 
 <main>
@@ -91,7 +91,7 @@
         <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
                 <div class="card border-0 overflow-hidden">
                     <div class="position-relative">
-                        <img src="{% static 'waypic.jpg' %}" class="card-img-top" alt="Neil Portrait">
+                        <img src="{% static 'waypic.jpg' %}" class="card-img-top" alt="Way Project">
                     </div>
                     <div class="card-body position-relative mt-n6 mx-2 bg-white border border-gray-300 text-center rounded">
                         <h3 class="h5 card-title">Quadratic Calculator</h3>
@@ -110,7 +110,7 @@
                                         <span class="me-1"><span class="far fa-user"></span></span>
                                         Submit
                                     </button>
-                                    <button class="btn btn-primary" aria-label="mesage button" title="message button">
+                                    <button class="btn btn-primary" aria-label="message button" title="message button">
                                         <span aria-hidden="true" class="far fa-envelope"></span>
                                         ?
                                     </button>
@@ -127,15 +127,15 @@
         <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-7 mb-lg-0">
                 <div class="card border-0 overflow-hidden">
                     <div class="position-relative">
-                        <img src="{% static 'waypic.jpg' %}" class="card-img-top" alt="Neil Portrait">
+                        <img src="{% static 'waypic.jpg' %}" class="card-img-top" alt="Way Project">
                     </div>
                     <div class="card-body position-relative mt-n6 mx-2 bg-white border border-gray-300 text-center rounded">
-                        <h3 class="h5 card-title">Quadratic Calculator</h3>
+                        <h3 class="h5 card-title">Addition Calculator</h3>
                         <span class="text-gray"><span class="fas fa-map-marker-alt me-2"></span>Chapter 2</span>
 
                         <div>
 
-                            <p class="mt-3">Please enter the coefficients <strong>a</strong>, <strong>b</strong> and <strong>c</strong> of a quadratic equation of the form <strong>ax&#x00B2; + bx + c = 0</strong></p>
+                            <p class="mt-3">Please enter the value <strong>a</strong>, <strong>b</strong> and <strong>c</strong> of an equation of the form <strong>a&#x00B2; + b + c = answer</strong></p>
                             <form name="input_form" action="javascript:validate();">
                                 a: <input type="text" name="aterm" size="5" required>
                                 b: <input type="text" name="bterm" size="5" required>
@@ -146,14 +146,14 @@
                                         <span class="me-1"><span class="far fa-user"></span></span>
                                         Submit
                                     </button>
-                                    <button class="btn btn-primary" aria-label="mesage button" title="message button">
+                                    <button class="btn btn-primary" aria-label="message button" title="message button">
                                         <span aria-hidden="true" class="far fa-envelope"></span>
                                         ?
                                     </button>
                                 </div>
 
                             </form>
-                            <p id="output_text"></p>
+                            <p id="output_text2"></p>
 
                         </div>
 
@@ -163,7 +163,7 @@
         <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
                 <div class="card border-0 overflow-hidden">
                     <div class="position-relative">
-                        <img src="{% static 'waypic.jpg' %}" class="card-img-top" alt="Neil Portrait">
+                        <img src="{% static 'waypic.jpg' %}" class="card-img-top" alt="Way Project">
                     </div>
                     <div class="card-body position-relative mt-n6 mx-2 bg-white border border-gray-300 text-center rounded">
                         <h3 class="h5 card-title">Wahyu Kuswantoro</h3>
@@ -198,7 +198,7 @@
     </div>
 </div>
 
-    </main>
+</main>
 
 </body>
 
