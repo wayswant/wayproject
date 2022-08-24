@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
     <title>Atomic Energy</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/pixel.css' %}" />
@@ -49,28 +48,23 @@
 
                         <div>
 
-                            <p class="mt-3">Please select the element first</p>
+
                             <form name="input_form" method="post">
                                 {% csrf_token %}
                                 <div>
+                                    <p class="mt-3">Select the element:
                                 <select name="element" class="btn btn-sm btn-tertiary dropdown-toggle dropdown-toggle-split">
                                     <option value="1"> 1-H </option>
                                     <option value="2"> 2-He </option>
                                     <option value="3"> 3-Li </option>
                                     <option value="4"> 4-Be </option>
-                                </select>
+                                </select> </p>
                                 </div>
+                                Z<sub>eff</sub>
                                 <br>
-                                <label>Z<sub>eff</sub> 1:</label> <input type="text" name="num1" size="5" required>
-                                <label>2:</label> <input type="text" name="num2" size="5" required>
-                                <label>3:</label> <input type="text" name="num3" size="5" required>
-                                <label>Select operator</label>
-                                <select name="opr" class="btn btn-sm btn-white dropdown-toggle dropdown-toggle-split">
-                                    <option value="+"> + </option>
-                                    <option value="-"> - </option>
-                                    <option value="*"> * </option>
-                                    <option value="/"> / </option>
-                                </select>
+                                <label>1:</label> <input type="text" name="num1" size="4" required>
+                                <label>2:</label> <input type="text" name="num2" size="4" required>
+                                <label>3:</label> <input type="text" name="num3" size="4" required>
                                 <br>
                                 <div class="btn-group">
                                     <button type="submit" class="btn btn-tertiary btn-icon">
@@ -84,7 +78,9 @@
                                 </div>
 
                             </form>
-                            <p class="mt-3">Result: <input type="text" value="{{z}}" size="5"> eV</p>
+                            <p class="mt-3">Result: <input type="text" value="{{z}}" size="5"> eV</p><br>
+                            {{ee1}}
+                            {{z}}
 
                         </div>
 
